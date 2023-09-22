@@ -54,6 +54,30 @@ builder.Services.AddScoped<IDw_Admin_Create_Hr_AcountService, Dw_Admin_Create_Hr
 builder.Services.AddScoped<IDw_Admin_Employee_CreateService, Dw_Admin_Employee_CreateService>();
 builder.Services.AddScoped<IDw_Admin_Employees_WithoutusersService, Dw_Admin_Employees_WithoutusersService>();
 builder.Services.AddScoped<IDw_Admin_Grid_EmployeesService, Dw_Admin_Grid_EmployeesService>();
+builder.Services.AddScoped<IDw_Admin_Grid_UsersService, Dw_Admin_Grid_UsersService>();
+builder.Services.AddScoped<IDw_AuthService, Dw_AuthService>();
+builder.Services.AddScoped<IDw_Admin_Grid_EmployeesService, Dw_Admin_Grid_EmployeesService>();
+builder.Services.AddScoped<IDw_Admin_Grid_EmployeesService, Dw_Admin_Grid_EmployeesService>();
+builder.Services.AddScoped<IDw_Admin_Grid_EmployeesService, Dw_Admin_Grid_EmployeesService>();
+builder.Services.AddScoped<IDw_Admin_Grid_EmployeesService, Dw_Admin_Grid_EmployeesService>();
+builder.Services.AddScoped<IDw_Admin_Grid_EmployeesService, Dw_Admin_Grid_EmployeesService>();
+builder.Services.AddScoped<IDw_Admin_Grid_EmployeesService, Dw_Admin_Grid_EmployeesService>();
+builder.Services.AddScoped<IDw_Admin_Grid_EmployeesService, Dw_Admin_Grid_EmployeesService>();
+builder.Services.AddScoped<IDw_Admin_Grid_EmployeesService, Dw_Admin_Grid_EmployeesService>();
+builder.Services.AddScoped<IDw_Admin_Grid_EmployeesService, Dw_Admin_Grid_EmployeesService>();
+builder.Services.AddScoped<IDw_Admin_Grid_EmployeesService, Dw_Admin_Grid_EmployeesService>();
+builder.Services.AddScoped<IDw_Admin_Grid_EmployeesService, Dw_Admin_Grid_EmployeesService>();
+builder.Services.AddScoped<IDw_Admin_Grid_EmployeesService, Dw_Admin_Grid_EmployeesService>();
+builder.Services.AddScoped<IDw_Admin_Grid_EmployeesService, Dw_Admin_Grid_EmployeesService>();
+builder.Services.AddScoped<IDw_Admin_Grid_EmployeesService, Dw_Admin_Grid_EmployeesService>();
+builder.Services.AddScoped<IDw_Admin_Grid_EmployeesService, Dw_Admin_Grid_EmployeesService>();
+builder.Services.AddScoped<IDw_Admin_Grid_EmployeesService, Dw_Admin_Grid_EmployeesService>();
+builder.Services.AddScoped<IDw_Admin_Grid_EmployeesService, Dw_Admin_Grid_EmployeesService>();
+builder.Services.AddScoped<IDw_Admin_Grid_EmployeesService, Dw_Admin_Grid_EmployeesService>();
+builder.Services.AddScoped<IDw_Admin_Grid_EmployeesService, Dw_Admin_Grid_EmployeesService>();
+builder.Services.AddScoped<IDw_Admin_Grid_EmployeesService, Dw_Admin_Grid_EmployeesService>();
+builder.Services.AddScoped<IDw_Admin_Grid_EmployeesService, Dw_Admin_Grid_EmployeesService>();
+builder.Services.AddScoped<IDw_Admin_Grid_EmployeesService, Dw_Admin_Grid_EmployeesService>();
 
 builder.Services.AddGzipCompression(CompressionLevel.Fastest);
 
