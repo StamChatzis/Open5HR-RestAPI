@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-16LE" standalone="no"?>
+<dw_employee_registry>
+  @foreach
+  {
+  <dw_employee_registry_row>
+    <ots_adeies_employee_id>@(ots_adeies_employee_id)</ots_adeies_employee_id>
+    <ots_adeies_employee_first_name>@(ots_adeies_employee_first_name)</ots_adeies_employee_first_name>
+    <ots_adeies_employee_last_name>@(ots_adeies_employee_last_name)</ots_adeies_employee_last_name>
+    <ots_adeies_user_username>@(ots_adeies_user_username)</ots_adeies_user_username>
+    <ots_adeies_employee_supervisor_supervisor_id>@(ots_adeies_employee_supervisor_supervisor_id)</ots_adeies_employee_supervisor_supervisor_id>
+    <ots_adeies_employee_first_name>@(ots_adeies_employee_first_name)</ots_adeies_employee_first_name>
+    <ots_adeies_employee_last_name>@(ots_adeies_employee_last_name)</ots_adeies_employee_last_name>
+    <compute_0008/>
+    <ots_adeies_user_employee_id>@(ots_adeies_user_employee_id)</ots_adeies_user_employee_id>
+  </dw_employee_registry_row>
+  }
+</dw_employee_registry>

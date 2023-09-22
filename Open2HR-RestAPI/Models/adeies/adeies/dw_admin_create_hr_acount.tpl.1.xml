@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-16LE" standalone="no"?>
+<dw_admin_create_hr_acount>
+  @foreach
+  {
+  <dw_admin_create_hr_acount_row>
+    <id>@(id)</id>
+    <username>@(username)</username>
+    <password/>
+    <is_enabled/>
+    <role/>
+    <employee_id>@(employee_id)</employee_id>
+  </dw_admin_create_hr_acount_row>
+  }
+</dw_admin_create_hr_acount>

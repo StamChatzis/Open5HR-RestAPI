@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-16LE" standalone="no"?>
+<untitled>
+  @foreach
+  {
+  <untitled_row>
+    <id/>
+    <first_name/>
+    <last_name/>
+  </untitled_row>
+  }
+</untitled>

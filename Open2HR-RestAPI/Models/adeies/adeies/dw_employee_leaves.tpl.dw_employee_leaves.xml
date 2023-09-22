@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-16LE" standalone="no"?>
+<untitled>
+  @foreach
+  {
+  <untitled_row>
+    <ots_adeies_employee_first_name>@(first_name)</ots_adeies_employee_first_name>
+    <ots_adeies_employee_last_name>@(last_name)</ots_adeies_employee_last_name>
+    <ots_adeies_leave_request_sumbit_date>@(submit_date)</ots_adeies_leave_request_sumbit_date>
+    <ots_adeies_leave_request_start_date>@(start_date)</ots_adeies_leave_request_start_date>
+    <ots_adeies_leave_request_end_date>@(end_date)</ots_adeies_leave_request_end_date>
+    <ots_adeies_leave_request_duration>@(duration)</ots_adeies_leave_request_duration>
+    <ots_adeies_status_state>@(status)</ots_adeies_status_state>
+  </untitled_row>
+  }
+</untitled>
