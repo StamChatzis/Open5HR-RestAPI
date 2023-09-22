@@ -12,7 +12,7 @@ TestResults/
 obj/
 bin/
 
-./Open2HR-RestAPI/appsettings.json
+/Open2HR-RestAPI/appsettings.json
 
 #ignore output mild compiler
 GitExtensionsShellEx/Generated/
