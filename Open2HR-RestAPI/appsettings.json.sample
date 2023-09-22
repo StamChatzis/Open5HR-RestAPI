@@ -1,0 +1,19 @@
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "AllowedHosts": "*",
+  "ConnectionStrings": {
+    "Local": "Data Source=localhost;Initial Catalog=AdventureWorks2012;Integrated Security=False;User ID=username;Password=password;Pooling=True;Min Pool Size=0;Max Pool Size=100;ApplicationIntent=ReadWrite",
+    "<CONNECTION-NAME>": "Data Source=<YOUR SERVER NAME>;Initial Catalog=Adeies;User ID=<YOUR USERNAME>;Password=<YOUR PASSWORD>;Trust Server Certificate=True"
+  },
+  "DbParam": {
+    "<CONNECTION-NAME>": {
+      "DelimitIdentifier": false,
+      "TrimSpaces": false
+    }
+  }
+}
