@@ -89,3 +89,4 @@ node_modules/
 dist/
 
 .svn/
+/Open2HR-RestAPI/appsettings.json
