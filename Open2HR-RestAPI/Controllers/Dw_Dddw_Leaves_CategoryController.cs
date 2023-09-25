@@ -22,6 +22,7 @@ namespace Open2HRRestAPI.Controllers
             _idw_dddw_leaves_categoryservice = idw_dddw_leaves_categoryservice;
         }
     
+        /*
         //POST api/Dw_Dddw_Leaves_Category/Update
         [HttpPost]
         [ProducesResponseType(typeof(int), StatusCodes.Status200OK)]
@@ -37,7 +38,7 @@ namespace Open2HRRestAPI.Controllers
             {
                 return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
             }
-        }
+        }*/
 
         //GET api/Dw_Dddw_Leaves_Category/Retrieve
         [HttpGet]

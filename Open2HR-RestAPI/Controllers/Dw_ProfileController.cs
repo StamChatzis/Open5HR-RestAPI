@@ -22,6 +22,7 @@ namespace Open2HRRestAPI.Controllers
             _idw_profileservice = idw_profileservice;
         }
     
+        /*
         //POST api/Dw_Profile/Update
         [HttpPost]
         [ProducesResponseType(typeof(int), StatusCodes.Status200OK)]
@@ -37,7 +38,7 @@ namespace Open2HRRestAPI.Controllers
             {
                 return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
             }
-        }
+        }*/
 
         //GET api/Dw_Profile/Retrieve/{an_id}
         [HttpGet("{an_id}")]

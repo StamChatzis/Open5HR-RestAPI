@@ -5,6 +5,7 @@ using DWNet.Data;
 using System;
 using Open2HRRestAPI;
 using Open2HRRestAPI.Models;
+using PowerScript.Bridge;
 
 namespace Open2HRRestAPI.Services.Impl
 {
@@ -12,19 +13,32 @@ namespace Open2HRRestAPI.Services.Impl
     /// The service needs to be injected into the ConfigureServices method of the Startup class. The sample code is as follows:
     /// services.AddScoped<I<Dw_SequenceService>, Dw_SequenceService>();
     /// </summary>  
-    public class Dw_SequenceService : PbServiceBase<Dw_Sequence>, IDw_SequenceService
-    {
-        public Dw_SequenceService(SampleDataContext dataContext) : base(dataContext)
-        {
-        }
+    public class Dw_SequenceService : IDw_SequenceService {
 
-        public async Task<IDataStore<Dw_Sequence>> RetrieveAsync( CancellationToken cancellationToken)
+        private readonly SampleDataContext _dataContext;
+
+        public Dw_SequenceService(SampleDataContext dataContext)
+        {
+            _dataContext = dataContext;
+    }
+
+        public async Task<int> GetNewId( CancellationToken cancellationToken)
         {
             var dataStore = new DataStore<Dw_Sequence>(_dataContext);
 
             await dataStore.RetrieveAsync(new object[] { }, cancellationToken);
 
-            return dataStore;
+            int lastId = 0;
+            lastId = dataStore.GetItem<int>(dataStore.RowCount - 1, "id");
+
+            int newId = 0;
+            newId = lastId + 1;
+
+            dataStore.SetItem(dataStore.RowCount - 1, "id", newId);
+
+            dataStore.Update(true, PbResultStyle.Flags);
+
+            return newId;
         }
     }  
 }

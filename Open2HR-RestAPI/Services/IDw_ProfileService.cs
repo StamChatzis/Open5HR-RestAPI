@@ -7,7 +7,7 @@ using Open2HRRestAPI.Models;
 
 namespace Open2HRRestAPI.Services
 {
-    public interface IDw_ProfileService : IPbServiceBase<Dw_Profile>
+    public interface IDw_ProfileService
     {
         Task<IDataStore<Dw_Profile>> RetrieveAsync(double? an_id, CancellationToken cancellationToken);
     }

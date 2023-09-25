@@ -7,7 +7,7 @@ using Open2HRRestAPI.Models;
 
 namespace Open2HRRestAPI.Services
 {
-    public interface IDw_Employee_SupervisorService : IPbServiceBase<Dw_Employee_Supervisor>
+    public interface IDw_Employee_SupervisorService
     {
         Task<IDataStore<Dw_Employee_Supervisor>> RetrieveAsync( CancellationToken cancellationToken);
     }

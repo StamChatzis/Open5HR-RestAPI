@@ -7,7 +7,7 @@ using Open2HRRestAPI.Models;
 
 namespace Open2HRRestAPI.Services
 {
-    public interface IDw_Admin_Create_Hr_AcountService : IPbServiceBase<Dw_Admin_Create_Hr_Acount>
+    public interface IDw_Admin_Create_Hr_AcountService
     {
         Task<IDataStore<Dw_Admin_Create_Hr_Acount>> RetrieveAsync( CancellationToken cancellationToken);
     }

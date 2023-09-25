@@ -22,6 +22,7 @@ namespace Open2HRRestAPI.Controllers
             _idddw_supervisor_namesservice = idddw_supervisor_namesservice;
         }
     
+        /*
         //POST api/Dddw_Supervisor_Names/Update
         [HttpPost]
         [ProducesResponseType(typeof(int), StatusCodes.Status200OK)]
@@ -37,7 +38,7 @@ namespace Open2HRRestAPI.Controllers
             {
                 return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
             }
-        }
+        }*/
 
         //GET api/Dddw_Supervisor_Names/Retrieve
         [HttpGet]

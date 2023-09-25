@@ -7,7 +7,7 @@ using Open2HRRestAPI.Models;
 
 namespace Open2HRRestAPI.Services
 {
-    public interface IDw_Dddw_Leaves_CategoryService : IPbServiceBase<Dw_Dddw_Leaves_Category>
+    public interface IDw_Dddw_Leaves_CategoryService
     {
         Task<IDataStore<Dw_Dddw_Leaves_Category>> RetrieveAsync( CancellationToken cancellationToken);
     }

@@ -12,10 +12,16 @@ namespace Open2HRRestAPI.Services.Impl
     /// The service needs to be injected into the ConfigureServices method of the Startup class. The sample code is as follows:
     /// services.AddScoped<I<Dw_Admin_Create_Hr_AcountService>, Dw_Admin_Create_Hr_AcountService>();
     /// </summary>  
-    public class Dw_Admin_Create_Hr_AcountService : PbServiceBase<Dw_Admin_Create_Hr_Acount>, IDw_Admin_Create_Hr_AcountService
+    public class Dw_Admin_Create_Hr_AcountService: IDw_Admin_Create_Hr_AcountService
     {
-        public Dw_Admin_Create_Hr_AcountService(SampleDataContext dataContext) : base(dataContext)
+
+        private readonly SampleDataContext _dataContext;
+        private readonly IDw_SequenceService _sequenceService;
+
+        public Dw_Admin_Create_Hr_AcountService(SampleDataContext dataContext, IDw_SequenceService sequenceService)
         {
+            _dataContext = dataContext;
+            _sequenceService = sequenceService;
         }
 
         public async Task<IDataStore<Dw_Admin_Create_Hr_Acount>> RetrieveAsync( CancellationToken cancellationToken)

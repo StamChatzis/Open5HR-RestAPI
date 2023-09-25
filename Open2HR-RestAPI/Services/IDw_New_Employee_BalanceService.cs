@@ -7,7 +7,7 @@ using Open2HRRestAPI.Models;
 
 namespace Open2HRRestAPI.Services
 {
-    public interface IDw_New_Employee_BalanceService : IPbServiceBase<Dw_New_Employee_Balance>
+    public interface IDw_New_Employee_BalanceService
     {
         Task<IDataStore<Dw_New_Employee_Balance>> RetrieveAsync(double? an_id, CancellationToken cancellationToken);
     }

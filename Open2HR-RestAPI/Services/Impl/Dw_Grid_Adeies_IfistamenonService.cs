@@ -12,10 +12,16 @@ namespace Open2HRRestAPI.Services.Impl
     /// The service needs to be injected into the ConfigureServices method of the Startup class. The sample code is as follows:
     /// services.AddScoped<I<Dw_Grid_Adeies_IfistamenonService>, Dw_Grid_Adeies_IfistamenonService>();
     /// </summary>  
-    public class Dw_Grid_Adeies_IfistamenonService : PbServiceBase<Dw_Grid_Adeies_Ifistamenon>, IDw_Grid_Adeies_IfistamenonService
+    public class Dw_Grid_Adeies_IfistamenonService: IDw_Grid_Adeies_IfistamenonService
     {
-        public Dw_Grid_Adeies_IfistamenonService(SampleDataContext dataContext) : base(dataContext)
+
+        private readonly SampleDataContext _dataContext;
+        private readonly IDw_SequenceService _sequenceService;
+
+        public Dw_Grid_Adeies_IfistamenonService(SampleDataContext dataContext, IDw_SequenceService sequenceService)
         {
+            _dataContext = dataContext;
+            _sequenceService = sequenceService;
         }
 
         public async Task<IDataStore<Dw_Grid_Adeies_Ifistamenon>> RetrieveAsync(double? an_ID, CancellationToken cancellationToken)

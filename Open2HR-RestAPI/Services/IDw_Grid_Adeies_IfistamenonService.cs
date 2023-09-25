@@ -7,7 +7,7 @@ using Open2HRRestAPI.Models;
 
 namespace Open2HRRestAPI.Services
 {
-    public interface IDw_Grid_Adeies_IfistamenonService : IPbServiceBase<Dw_Grid_Adeies_Ifistamenon>
+    public interface IDw_Grid_Adeies_IfistamenonService
     {
         Task<IDataStore<Dw_Grid_Adeies_Ifistamenon>> RetrieveAsync(double? an_ID, CancellationToken cancellationToken);
     }

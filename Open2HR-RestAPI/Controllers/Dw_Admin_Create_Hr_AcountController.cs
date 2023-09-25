@@ -22,6 +22,7 @@ namespace Open2HRRestAPI.Controllers
             _idw_admin_create_hr_acountservice = idw_admin_create_hr_acountservice;
         }
     
+        /*
         //POST api/Dw_Admin_Create_Hr_Acount/Update
         [HttpPost]
         [ProducesResponseType(typeof(int), StatusCodes.Status200OK)]
@@ -37,7 +38,7 @@ namespace Open2HRRestAPI.Controllers
             {
                 return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
             }
-        }
+        }*/
 
         //GET api/Dw_Admin_Create_Hr_Acount/Retrieve
         [HttpGet]

@@ -22,6 +22,7 @@ namespace Open2HRRestAPI.Controllers
             _idw_new_employeeservice = idw_new_employeeservice;
         }
     
+        /*
         //POST api/Dw_New_Employee/Update
         [HttpPost]
         [ProducesResponseType(typeof(int), StatusCodes.Status200OK)]
@@ -37,7 +38,7 @@ namespace Open2HRRestAPI.Controllers
             {
                 return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
             }
-        }
+        }*/
 
         //GET api/Dw_New_Employee/Retrieve/{an_id}
         [HttpGet("{an_id}")]

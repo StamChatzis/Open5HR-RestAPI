@@ -7,7 +7,7 @@ using Open2HRRestAPI.Models;
 
 namespace Open2HRRestAPI.Services
 {
-    public interface IDw_Dddw_Leave_StatusService : IPbServiceBase<Dw_Dddw_Leave_Status>
+    public interface IDw_Dddw_Leave_StatusService
     {
         Task<IDataStore<Dw_Dddw_Leave_Status>> RetrieveAsync( CancellationToken cancellationToken);
     }

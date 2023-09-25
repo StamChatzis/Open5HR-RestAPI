@@ -7,8 +7,8 @@ using Open2HRRestAPI.Models;
 
 namespace Open2HRRestAPI.Services
 {
-    public interface IDw_SequenceService : IPbServiceBase<Dw_Sequence>
+    public interface IDw_SequenceService
     {
-        Task<IDataStore<Dw_Sequence>> RetrieveAsync( CancellationToken cancellationToken);
+        Task<int> GetNewId( CancellationToken cancellationToken);
     }
 }

@@ -22,6 +22,7 @@ namespace Open2HRRestAPI.Controllers
             _idw_admin_grid_usersservice = idw_admin_grid_usersservice;
         }
     
+        /*
         //POST api/Dw_Admin_Grid_Users/Update
         [HttpPost]
         [ProducesResponseType(typeof(int), StatusCodes.Status200OK)]
@@ -37,7 +38,7 @@ namespace Open2HRRestAPI.Controllers
             {
                 return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
             }
-        }
+        }*/
 
         //GET api/Dw_Admin_Grid_Users/Retrieve/{an_id}
         [HttpGet("{an_id}")]

@@ -24,7 +24,7 @@ namespace FromPBtoCSharp
         
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDataContext<SampleDataContext>(m => m.UseSqlServer(Configuration, "TH-DE-02709\\STAM_SERVER.Adeies"));
+            services.AddDataContext<SampleDataContext>(m => m.UseSqlServer(Configuration, "TH-DE-02705\\SIMOS.Adeies"));
             services.AddEndpointsApiExplorer();
             services.AddSwaggerGen();
             
@@ -54,7 +54,6 @@ namespace FromPBtoCSharp
             services.AddScoped<IDw_Grid_Adeies_IfistamenonService, Dw_Grid_Adeies_IfistamenonService>();
             services.AddScoped<IDw_Hr_Employees_Wo_UsersService, Dw_Hr_Employees_Wo_UsersService>();
             services.AddScoped<IDw_Hr_ShowleavecategoriesService, Dw_Hr_ShowleavecategoriesService>();
-            services.AddScoped<IDw_LoginService, Dw_LoginService>();
             services.AddScoped<IDw_My_SecurityService, Dw_My_SecurityService>();
             services.AddScoped<IDw_New_Employee_BalanceService, Dw_New_Employee_BalanceService>();
             services.AddScoped<IDw_New_EmployeeService, Dw_New_EmployeeService>();

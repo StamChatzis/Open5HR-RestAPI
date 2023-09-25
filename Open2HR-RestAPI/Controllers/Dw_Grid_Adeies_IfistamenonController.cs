@@ -22,6 +22,7 @@ namespace Open2HRRestAPI.Controllers
             _idw_grid_adeies_ifistamenonservice = idw_grid_adeies_ifistamenonservice;
         }
     
+        /*
         //POST api/Dw_Grid_Adeies_Ifistamenon/Update
         [HttpPost]
         [ProducesResponseType(typeof(int), StatusCodes.Status200OK)]
@@ -37,7 +38,7 @@ namespace Open2HRRestAPI.Controllers
             {
                 return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
             }
-        }
+        }*/
 
         //GET api/Dw_Grid_Adeies_Ifistamenon/Retrieve/{an_ID}
         [HttpGet("{an_ID}")]

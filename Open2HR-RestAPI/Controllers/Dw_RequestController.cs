@@ -22,6 +22,7 @@ namespace Open2HRRestAPI.Controllers
             _idw_requestservice = idw_requestservice;
         }
     
+        /*
         //POST api/Dw_Request/Update
         [HttpPost]
         [ProducesResponseType(typeof(int), StatusCodes.Status200OK)]
@@ -37,7 +38,7 @@ namespace Open2HRRestAPI.Controllers
             {
                 return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
             }
-        }
+        }*/
 
         //GET api/Dw_Request/Retrieve
         [HttpGet]
